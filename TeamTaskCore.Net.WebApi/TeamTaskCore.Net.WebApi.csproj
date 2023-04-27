@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <!-- <TargetFrameworks>netcoreapp3.1;net5.0;</TargetFrameworks> -->
+    <TargetFramework>net5.0</TargetFramework>
+    <CheckEolTargetFramework>false</CheckEolTargetFramework>
+    <SuppressTfmSupportBuildWarnings>true</SuppressTfmSupportBuildWarnings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="5.6.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\TeamTaskCore.Net.Configuration\TeamTaskCore.Net.Configuration.csproj" />
+    <ProjectReference Include="..\TeamTaskCore.Net.Model\TeamTaskCore.Net.Model.csproj" />
+  </ItemGroup>
+
+</Project>
